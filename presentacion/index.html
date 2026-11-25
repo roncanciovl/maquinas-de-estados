@@ -407,7 +407,7 @@
     </section>
 
     <!-- ===================== SLIDE 2: COMBINACIONAL -> SECUENCIAL ===================== -->
-    <section class="slide" data-time="0:35 – 2:05" data-notes="Arranca con lo que ya saben: hasta ahora diseñaron lógica combinacional. Muestra su límite con el semáforo. Pregunta al grupo: «Si el semáforo recibe el evento 'se acabó el tiempo', ¿a qué luz debe pasar?». Recoge 2 respuestas → clic en 'Mostrar clave'. Concluye: un circuito combinacional no tiene memoria (no sabe en qué estado estaba); para resolver problemas con secuencia en el tiempo necesitamos memoria (flip-flops), realimentación y, en diseño síncrono, reloj. Precisión: en Moore la salida depende solo del estado; la fórmula general de la diapositiva incluye también la entrada (Mealy). Puente: «A esa luz actual la llamamos estado, y a "se acabó el tiempo", entrada. Precisemos qué son un estado, una entrada y una transición».">
+    <section class="slide" data-time="0:35 – 2:05" data-notes="Arranca con lo que ya saben: hasta ahora diseñaron lógica combinacional. Muestra su límite con el semáforo. Pregunta al grupo: «Un semáforo espera a que se cumpla un tiempo y luego cambia de luz. Cuando el temporizador avisa 'se acabó el tiempo', ¿cómo sabe si debe pasar a Amarillo, a Rojo o a Verde?». Recoge 2 respuestas → clic en 'Mostrar clave'. Si alguien pregunta cómo sabe cuánto tiempo pasó: el temporizador es otro circuito con memoria (un contador); por ahora lo tratamos como una entrada que llega de fuera. Concluye: un circuito combinacional no tiene memoria (no sabe en qué estado estaba); para resolver problemas con secuencia en el tiempo necesitamos memoria (flip-flops), realimentación y, en diseño síncrono, reloj. Precisión: en Moore la salida depende solo del estado; la fórmula general de la diapositiva incluye también la entrada (Mealy). Puente: «A esa luz actual la llamamos estado, y a "se acabó el tiempo", entrada. Precisemos qué son un estado, una entrada y una transición».">
       <div class="slide-header">
         <div>
           <div class="kicker">1. Por qué la electrónica digital necesita memoria</div>
@@ -419,11 +419,11 @@
       <div class="slide-body">
         <div class="question-box">
           <span class="q-tag">Pregunta al grupo</span>
-          <p>Si al semáforo le llega el pulso «se acabó el tiempo», ¿debe pasar a Amarillo, a Rojo o a Verde?</p>
+          <p>Un semáforo espera a que se cumpla un tiempo y luego cambia de luz. Cuando el temporizador avisa «se acabó el tiempo», ¿cómo sabe si debe pasar a Amarillo, a Rojo o a Verde?</p>
           <button class="reveal-btn" onclick="toggleReveal('ans-s3')">Mostrar clave</button>
         </div>
         <div id="ans-s3" class="reveal-answer">
-          Clave: ¡Imposible saberlo sin memoria! La misma entrada produce tres respuestas distintas según la luz actual. Por eso nace la <strong>lógica secuencial</strong> y su modelo central: la <strong>Máquina de Estados Finitos (FSM)</strong>.
+          Clave: con solo el aviso no puede saberlo. El mismo aviso lleva a tres luces distintas según la <strong>luz actual</strong>, así que el semáforo tiene que <strong>recordar en qué luz está</strong>: eso es memoria. Por eso nace la <strong>lógica secuencial</strong> y su modelo central: la <strong>Máquina de Estados Finitos (FSM)</strong>.
         </div>
         <div class="grid-2">
           <!-- Combinacional -->
