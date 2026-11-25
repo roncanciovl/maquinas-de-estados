@@ -21,7 +21,9 @@ Una clase introductoria de 12 minutos con enfoque conceptual:
 
 Cierra con un reto de diseño: agregar un modo de emergencia al semáforo.
 
-**Cómo usarla:** descarga [`presentacion/index.html`](presentacion/index.html) y ábrelo en un navegador. No necesita conexión ni instalación.
+**Ver en línea:** [roncanciovl.github.io/maquinas-de-estados/presentacion](https://roncanciovl.github.io/maquinas-de-estados/presentacion/). Es interactiva y no requiere instalar nada.
+
+**Sin conexión:** descarga [`presentacion/index.html`](presentacion/index.html) y ábrelo en un navegador.
 
 | Tecla | Acción |
 |---|---|
